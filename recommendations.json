@@ -1,0 +1,50 @@
+{
+  "SQL Injection": {
+    "description": "SQL Injection vulnerability found.",
+    "exploitation": ["Use parameterized queries", "Use stored procedures"],
+    "bypass_waf": ["Try using different encoding techniques", "Use time-based payloads"],
+    "recommendations": "Sanitize and validate all user inputs."
+  },
+  "XSS": {
+    "description": "Cross Site Scripting vulnerability found.",
+    "exploitation": ["Inject malicious JavaScript code"],
+    "bypass_waf": ["Use obfuscated scripts", "Use event handlers"],
+    "recommendations": "Use Content Security Policy (CSP) and sanitize user inputs."
+  },
+  "CSRF": {
+    "description": "Cross Site Request Forgery vulnerability found.",
+    "exploitation": ["Send unauthorized requests on behalf of the user"],
+    "bypass_waf": ["Use CSRF tokens"],
+    "recommendations": "Implement anti-CSRF tokens in forms and validate them server-side."
+  },
+  "Command Injection": {
+    "description": "Command Injection vulnerability found.",
+    "exploitation": ["Execute arbitrary commands on the server"],
+    "bypass_waf": ["Use different command delimiters"],
+    "recommendations": "Validate and sanitize user inputs and avoid using shell commands."
+  },
+  "Insecure Deserialization": {
+    "description": "Insecure Deserialization vulnerability found.",
+    "exploitation": ["Exploit the deserialization process to execute arbitrary code"],
+    "bypass_waf": ["Obfuscate serialized objects"],
+    "recommendations": "Use safe deserialization libraries and validate input data."
+  },
+  "SSRF": {
+    "description": "Server-Side Request Forgery vulnerability found.",
+    "exploitation": ["Send crafted requests to access internal services"],
+    "bypass_waf": ["Use various encoding techniques"],
+    "recommendations": "Validate and sanitize URLs and implement network segmentation."
+  },
+  "XXE": {
+    "description": "XML External Entity vulnerability found.",
+    "exploitation": ["Inject malicious XML to access internal files"],
+    "bypass_waf": ["Use various XML encoding techniques"],
+    "recommendations": "Disable external entity parsing and validate XML inputs."
+  },
+  "IDOR": {
+    "description": "Insecure Direct Object Reference vulnerability found.",
+    "exploitation": ["Access unauthorized resources by modifying URL parameters"],
+    "bypass_waf": ["Use URL encoding techniques"],
+    "recommendations": "Implement proper access controls and validate user inputs."
+  }
+}

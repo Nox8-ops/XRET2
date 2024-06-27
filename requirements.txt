@@ -1,0 +1,13 @@
+requests
+nmap
+joblib
+pandas
+tqdm
+keras
+numpy
+Faker
+rich
+selenium
+webdriver_manager
+web3
+aiohttp
